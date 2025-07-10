@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias - NublaPay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #050B13;
+            --text-color: #FFFFFF;
+            --accent-color: #4A6CF7;
+            --card-bg: #0F172A;
+            --border-color: #1E293B;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #FFFFFF 0%, #A5B4FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .report-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 80px;
+            justify-content: center;
+        }
+        
+        .report-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 32px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .report-card h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+        
+        .report-card h3 {
+            font-size: 18px;
+            margin: 24px 0 12px;
+            font-weight: 600;
+        }
+        
+        .report-card ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .report-card li {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+        
+        .email-btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        .email-btn:hover {
+            background: #3A5BD9;
+        }
+        
+        .note {
+            background: rgba(74, 108, 247, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .report-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="https://nublapay.com">
+    <img src="http://noticiasangola.free.nf/wp-content/uploads/2025/07/nubla-logo-2.png" alt="NublaPay Logo" style="height:60px; width:auto;">
+</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Central de Denúncias</h1>
+            <p>Para relatar produtos inadequados ou atividades irregulares na plataforma da NublaPay, siga as orientações abaixo:</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="report-section">
+            <div class="report-card">
+                <h2>Plágio ou Pirataria</h2>
+                <p>Caso identifique um produto na NublaPay que seja uma cópia não autorizada do seu conteúdo original, envie um e-mail para <strong>denuncias@nublapay.com</strong> com as seguintes informações:</p>
+                
+                <h3>Sobre você:</h3>
+                <ul>
+                    <li>Nome completo</li>
+                    <li>E-mail de contato</li>
+                    <li>Plataforma onde o produto original é vendido</li>
+                    <li>Data de início das vendas do produto original</li>
+                    <li>Link do site e do checkout do produto original</li>
+                    <li>Comprovante de propriedade do produto, se disponível</li>
+                    <li>Capturas de tela de vendas anteriores</li>
+                    <li>Material para comparação de conteúdo</li>
+                </ul>
+                
+                <h3>Sobre o produto plagiado ou pirata:</h3>
+                <ul>
+                    <li>Link do site do produto plagiado ou pirata</li>
+                    <li>Link do checkout do produto plagiado ou pirata</li>
+                    <li>Capturas de tela ou qualquer material que evidencie o plágio</li>
+                </ul>
+                
+                <div class="note">
+                    Fornecer o máximo de informações possíveis nos ajudará a resolver a questão com mais agilidade. Nossa equipe de denúncias trabalha de segunda a sexta-feira e se empenhará para investigar e resolver a denúncia em até 24 horas úteis.
+                </div>
+                
+                <a href="mailto:denuncias@nublapay.com" class="email-btn">Enviar Denúncia</a>
+            </div>
+            
+            <div class="report-card">
+                <h2>Produto Proibido ou Fraudulento</h2>
+                <p>Se você identificar um produto na NublaPay que considere proibido ou fraudulento, envie um e-mail para <strong>denuncias@nublapay.com</strong> com as seguintes informações:</p>
+                
+                <h3>Sobre o produto proibido ou fraudulento:</h3>
+                <ul>
+                    <li>Link do site do produto</li>
+                    <li>Link do checkout do produto</li>
+                    <li>Motivo pelo qual você considera o produto proibido ou fraudulento</li>
+                    <li>Capturas de tela ou qualquer material que evidencie a irregularidade</li>
+                </ul>
+                
+                <div class="note">
+                    Assim como nas denúncias de plágio, fornecer o máximo de informações possíveis nos auxiliará a resolver a questão com mais rapidez. Nossa equipe de denúncias está disponível de segunda a sexta-feira e se dedicará para investigar e solucionar a denúncia em até 24 horas úteis.
+                </div>
+                
+                <a href="mailto:denuncias@nublapay.com" class="email-btn">Enviar Denúncia</a>
+            </div>
+        </div>
+        
+        <div class="note" style="max-width: 1000px; margin: 0 auto 60px;">
+            Estamos comprometidos em manter a integridade e a qualidade da plataforma NublaPay e contamos com a colaboração de nossa comunidade para identificar e relatar quaisquer irregularidades.
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 NublaPay. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

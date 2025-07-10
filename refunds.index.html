@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Reembolso - NublaPay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <style>
+        :root {
+            --primary-bg: #050B13;
+            --text-color: #FFFFFF;
+            --accent-color: #4A6CF7;
+            --card-bg: #0F172A;
+            --border-color: #1E293B;
+            --input-bg: #1E293B;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        .refund-box {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .refund-box h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: var(--accent-color);
+        }
+        
+        .refund-warning {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #EF4444;
+            padding: 15px;
+            border-radius: 0 6px 6px 0;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: #3A5BD9;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .refund-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="https://nublapay.com">
+                <img src="http://noticiasangola.free.nf/wp-content/uploads/2025/07/nubla-logo-2.png" alt="NublaPay Logo">
+            </a>
+        </div>
+        
+        <div class="refund-box">
+            <h1>Solicitar Reembolso</h1>
+            
+            <div class="refund-warning">
+                Ao solicitar o reembolso, você perderá imediatamente o acesso ao produto.
+            </div>
+            
+            <p style="margin-bottom: 20px; opacity: 0.8; font-size: 14px;">
+                A NublaPay atua como intermediadora de pagamentos. A responsabilidade pelo conteúdo e reembolsos é do vendedor.
+            </p>
+            
+            <form id="refundForm">
+                <div class="form-group">
+                    <label for="name">Nome do solicitante:*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Número de telefone:*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reason">Motivo da Solicitação de Reembolso:*</label>
+                    <textarea id="reason" name="reason" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Solicitar Reembolso</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        // Inicializa o input de telefone com Angola como padrão
+        const phoneInput = document.querySelector("#phone");
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "ao",
+            separateDialCode: true,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+        });
+        
+        // Validação do formulário
+        document.getElementById('refundForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aqui você pode adicionar a lógica para enviar o formulário
+            alert('Solicitação de reembolso enviada com sucesso!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

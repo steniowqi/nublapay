@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política Antifraude - NublaPay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #050B13;
+            --text-color: #FFFFFF;
+            --accent-color: #4A6CF7;
+            --card-bg: #0F172A;
+            --border-color: #1E293B;
+            --warning-color: #F59E0B;
+            --danger-color: #EF4444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #FFFFFF 0%, #A5B4FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .policy-section {
+            margin: 60px 0;
+        }
+        
+        .policy-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .policy-card h2 {
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: var(--accent-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .policy-card h2 svg {
+            margin-right: 12px;
+        }
+        
+        .policy-card h3 {
+            font-size: 20px;
+            margin: 30px 0 15px;
+            font-weight: 600;
+            color: var(--warning-color);
+        }
+        
+        .policy-card p {
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+        
+        .policy-card ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .policy-card li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+            opacity: 0.9;
+        }
+        
+        .policy-card li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+        
+        .warning-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--warning-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+        }
+        
+        .danger-box {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid var(--danger-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+        }
+        
+        .report-box {
+            background: rgba(74, 108, 247, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 40px 0 20px;
+        }
+        
+        .report-btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent-color);
+        }
+        
+        .report-btn:hover {
+            background: transparent;
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .policy-card {
+                padding: 30px 20px;
+            }
+            
+            .policy-card h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="https://nublapay.com">
+    <img src="http://noticiasangola.free.nf/wp-content/uploads/2025/07/nubla-logo-2.png" alt="NublaPay Logo" style="height:60px; width:auto;">
+</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Política Antifraude</h1>
+            <p>A NublaPay se compromete a garantir a segurança de sua plataforma e proteger seus usuários contra golpes, fraudes e atividades suspeitas.</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="policy-section">
+            <div class="policy-card">
+                <h2>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 2ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 4.19V11.99Z" fill="#4A6CF7"/>
+                    </svg>
+                    Compromisso com a Segurança
+                </h2>
+                
+                <p>A NublaPay implementa rigorosos mecanismos de segurança para garantir transações legítimas e proteger seus usuários. Nosso compromisso inclui:</p>
+                
+                <ul>
+                    <li>Monitoramento contínuo de transações para detectar padrões suspeitos.</li>
+                    <li>Uso de inteligência artificial e tecnologias avançadas para análise de risco.</li>
+                    <li>Verificação e autenticação de usuários para evitar identidades falsas.</li>
+                    <li>Cooperação com autoridades e instituições financeiras para coibir fraudes.</li>
+                </ul>
+                
+                <div class="warning-box">
+                    <h3>Nossa Prioridade é Sua Segurança</h3>
+                    <p>Investimos constantemente em tecnologia e processos para manter nossa plataforma segura contra qualquer tipo de ameaça ou atividade fraudulenta.</p>
+                </div>
+            </div>
+            
+            <div class="policy-card">
+                <h2>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#4A6CF7"/>
+                        <path d="M12 7C11.45 7 11 7.45 11 8V13C11 13.55 11.45 14 12 14C12.55 14 13 13.55 13 13V8C13 7.45 12.55 7 12 7ZM11 15V17H13V15H11Z" fill="#4A6CF7"/>
+                    </svg>
+                    Atividades Proibidas
+                </h2>
+                
+                <p>Os usuários da NublaPay estão proibidos de realizar as seguintes atividades:</p>
+                
+                <ul>
+                    <li>Uso de informações falsas ou fraudulentas para criação de contas.</li>
+                    <li>Tentativa de burlar os sistemas de pagamento e segurança.</li>
+                    <li>Prática de chargeback indevido para obtenção de reembolsos ilegítimos.</li>
+                    <li>Uso de robôs, scripts ou qualquer ferramenta automatizada para manipular transações.</li>
+                    <li>Qualquer tipo de atividade ilegal que possa comprometer a integridade da plataforma.</li>
+                </ul>
+                
+                <div class="danger-box">
+                    <h3>Violar estas políticas resulta em ações imediatas</h3>
+                    <p>Contas envolvidas em atividades fraudulentas serão suspensas imediatamente e os casos serão reportados às autoridades competentes.</p>
+                </div>
+            </div>
+            
+            <div class="policy-card">
+                <h2>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#4A6CF7"/>
+                    </svg>
+                    Medidas de Prevenção e Monitoramento
+                </h2>
+                
+                <p>A NublaPay adota um conjunto de medidas para prevenir fraudes, incluindo:</p>
+                
+                <h3>Análise de Transações</h3>
+                <p>Todas as operações são analisadas automaticamente para detectar comportamentos suspeitos.</p>
+                
+                <h3>Autenticação de Usuário</h3>
+                <p>Processo de verificação rigoroso para validar a identidade de novos cadastros.</p>
+                
+                <h3>Bloqueio de Contas Suspeitas</h3>
+                <p>Contas que apresentarem sinais de fraude poderão ser suspensas ou banidas.</p>
+                
+                <h3>Sistema de Denúncias</h3>
+                <p>Os usuários podem relatar atividades suspeitas diretamente à equipe de suporte.</p>
+            </div>
+            
+            <div class="policy-card">
+                <h2>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM19 11C19 15.52 15.64 19.69 12 20.93C8.36 19.69 5 15.52 5 11V6.3L12 3.19L19 6.3V11Z" fill="#4A6CF7"/>
+                        <path d="M11 7H13V13H11V7ZM11 15H13V17H11V15Z" fill="#4A6CF7"/>
+                    </svg>
+                    Consequências para Violações
+                </h2>
+                
+                <p>Caso um usuário seja identificado realizando atividades fraudulentas, a NublaPay poderá aplicar as seguintes sanções:</p>
+                
+                <ul>
+                    <li>Suspensão temporária ou definitiva da conta.</li>
+                    <li>Retenção de valores envolvidos em transações suspeitas.</li>
+                    <li>Comunicação às autoridades competentes e adoção de medidas legais cabíveis.</li>
+                </ul>
+                
+                <div class="report-box">
+                    <h3>Como Relatar Fraudes</h3>
+                    <p>Se você suspeitar de qualquer atividade fraudulenta em nossa plataforma, entre em contato imediatamente pelo e-mail <strong>seguranca@nublapay.com</strong>. Todas as denúncias serão tratadas com confidencialidade e rigor.</p>
+                    <a href="mailto:suporte@nublapay.com" class="report-btn">Reportar Atividade Suspeita</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="policy-card">
+            <h2>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#4A6CF7"/>
+                </svg>
+                Nosso Compromisso
+            </h2>
+            
+            <p>A NublaPay reforça seu compromisso em proporcionar um ambiente seguro e transparente para seus usuários. Nossa equipe trabalha continuamente para combater fraudes e proteger a integridade da plataforma.</p>
+            
+            <p>Estamos sempre evoluindo nossos sistemas e processos para garantir que você tenha a melhor e mais segura experiência em nossas plataformas.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 NublaPay. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

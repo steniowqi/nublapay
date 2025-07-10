@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Reembolso - NublaPay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #050B13;
+            --text-color: #FFFFFF;
+            --accent-color: #4A6CF7;
+            --card-bg: #0F172A;
+            --border-color: #1E293B;
+            --warning-color: #F59E0B;
+            --success-color: #10B981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        .hero {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #FFFFFF 0%, #A5B4FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .refund-container {
+            margin: 60px 0;
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 50px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .refund-section {
+            margin-bottom: 40px;
+        }
+        
+        .refund-section h2 {
+            font-size: 24px;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .refund-section h3 {
+            font-size: 20px;
+            color: var(--warning-color);
+            margin: 25px 0 15px;
+        }
+        
+        .refund-section p, .refund-section ul {
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .refund-section ul {
+            padding-left: 25px;
+        }
+        
+        .refund-section li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .note-box {
+            background: rgba(74, 108, 247, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+            font-size: 15px;
+        }
+        
+        .success-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--success-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+        }
+        
+        .warning-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--warning-color);
+            padding: 20px;
+            border-radius: 0 6px 6px 0;
+            margin: 30px 0;
+        }
+        
+        .contact-box {
+            background: var(--primary-bg);
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent-color);
+            margin-top: 15px;
+        }
+        
+        .contact-btn:hover {
+            background: transparent;
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .refund-container {
+                padding: 30px 20px;
+            }
+            
+            .refund-section h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="https://nublapay.com">
+    <img src="http://noticiasangola.free.nf/wp-content/uploads/2025/07/nubla-logo-2.png" alt="NublaPay Logo" style="height:60px; width:auto;">
+</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Política de Reembolso</h1>
+            <p>Transações seguras e processos transparentes para sua tranquilidade</p>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="refund-container">
+            <div class="refund-section">
+                <h2>Quando solicitar reembolso</h2>
+                <p>Você pode pedir reembolso nestas situações:</p>
+                
+                <ul>
+                    <li>Produto digital não entregue ou inacessível</li>
+                    <li>Serviço não executado conforme combinado</li>
+                    <li>Erro no processamento do pagamento</li>
+                    <li>Diferença entre o anunciado e o recebido</li>
+                </ul>
+            </div>
+            
+            <div class="refund-section">
+                <h2>Prazos para solicitação</h2>
+                
+                <ul>
+                    <li><strong>Conteúdos digitais:</strong> 7 dias após a compra</li>
+                    <li><strong>Serviços online:</strong> 3 dias após a conclusão</li>
+                    <li><strong>Assinaturas:</strong> 5 dias após cobrança</li>
+                </ul>
+                
+                <div class="note-box">
+                    <p>Cada vendedor pode ter políticas específicas que serão informadas no momento da compra.</p>
+                </div>
+            </div>
+            
+            <div class="refund-section">
+                <h2>Como funciona o processo</h2>
+                
+                <ol>
+                    <li>Entre em contato com o vendedor para resolver diretamente</li>
+                    <li>Caso não resolva, abra uma solicitação em sua conta NublaPay</li>
+                    <li>Nosso time analisará seu caso em até 5 dias úteis</li>
+                    <li>Se aprovado, o reembolso será processado</li>
+                </ol>
+                
+                <div class="success-box">
+                    <h3>Reembolso aprovado</h3>
+                    <p>O valor será devolvido ao seu método de pagamento original em até 10 dias úteis.</p>
+                </div>
+            </div>
+            
+            <div class="refund-section">
+                <h2>Casos que não cobrimos</h2>
+                
+                <ul>
+                    <li>Arrependimento após uso do produto/serviço</li>
+                    <li>Problemas com dispositivos ou conexão do comprador</li>
+                    <li>Mudança de opinião sobre qualidade subjetiva</li>
+                    <li>Solicitações fora do prazo</li>
+                </ul>
+            </div>
+            
+            <div class="contact-box">
+                <h3>Precisa de ajuda?</h3>
+                <p>Nossa equipe está disponível para esclarecer dúvidas sobre reembolsos:</p>
+                <a href="mailto:suporte@nublapay.com" class="contact-btn">Fale conosco</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 NublaPay. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
